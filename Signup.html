@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        body
+        {
+            font-family: 'Times New Roman', Times, serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        a, a:link, a:visited 
+        {
+            color: lightblue;
+
+            text-decoration: none;
+        }
+        
+        .signup
+        {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+
+            text-align: center;
+
+            border: solid 2px black !important;
+            border-radius: 20px;
+            width: 30%;
+            height: 30%;
+            background-color: white;
+            padding: 25px;
+        }
+
+        footer
+        {
+            position: absolute;
+            bottom: 4%;
+
+            font-size: 60px;
+            color: lightblue;
+        }
+
+        .login
+        {
+            position: absolute;
+            bottom: 1%;
+            right: 1%;
+
+            color: lightblue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body bgcolor="blue" background="images/banga.png">
+    <form class="signup" action="Home.html">
+        <h1 style="color: blue;">SIGN UP: </h1>
+        <label for="uName">Username: </label>
+        <input type="text" id="uName" name="username"> <br> <br>
+        <label for="email">E-mail: </label> 
+        <input type="text" id="email" name="E-mail"> <br> <br>
+        <label for="password">Password: </label> 
+        <input type="password" name="Password"> <br> <br>
+        <label for="confirm">Confirm Password</label>
+        <input type="password" name="password"> <br> <br>
+        <input type="submit" value="SIGN UP">
+    </form>
+
+    <footer>
+        <b><a href="Home.html">Calamba City Civic Hub</a></b>
+    </footer>
+
+    <a href="Login.html" class="login">LOG IN →</h1>
+</body>
+</html>
