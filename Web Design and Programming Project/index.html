@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calamba City Civic Hub</title>
+    <style>
+        body
+        {
+            font-family: 'Times New Roman', Times, serif !important;
+            width: 100%;
+        }
+
+        .bg
+        {
+            height: 78vh;
+            width: 100vw;
+            overflow: hidden;
+            object-fit:cover;
+
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+        }
+
+        .header {
+            margin-left: 6.77%;
+            color: lightblue;
+            position: absolute;
+            left: -5%;
+            bottom: 4.7%;
+
+            z-index: 1;
+
+        }
+
+        h1
+        {
+            font-size: 80px;
+            margin-bottom: -48px;
+            
+        }
+
+        h2
+        {
+            font-size: 40px;
+            margin-top: 5%;
+            margin-left: 10px;
+            
+            
+        }
+
+        .quote
+        {
+            color: lightblue;
+            position: absolute;
+            right: 3%;
+            bottom: 7.2%;
+
+           
+            
+        }
+
+        .links-home
+        { 
+            width: 98%;
+            position: absolute;
+            bottom: 1.5%;
+
+            border: solid white 2px!important;
+            padding: 0.3%;
+            border-radius: 15px;
+
+            z-index: 2;
+        }
+
+        a {
+            font-size: 27.5px !important;
+            
+            margin-left: 3%;
+            margin-right:3%;
+            color: lightblue;
+            font-size: 30px;
+
+            text-decoration: none;
+        }
+
+        a:link, a:visited {
+            color: lightblue;
+        }
+
+        iframe
+        {
+            position: absolute;
+            right: 2%;
+            top: 4.5%;
+
+            height: 28%;
+            width: 25%;
+        }
+
+        #prevButton
+        {
+            position: absolute;
+            top: 40%;
+            left: 1%;
+        }
+
+        #nextButton
+        {
+            position: absolute;
+            top: 40%;
+            right: 1%;
+        }
+    </style>
+</head>
+<body bgcolor="blue">
+    <div id="imageSlideshow">
+    <img src="images/banga.png" alt="banga, Calamba, Bayan" class="bg">
+    <img src="images/RizalShrine.jpg" alt="Rizal, Shrine, Calamba" class="bg">
+    <img src="images/RIZAL @ 150 015.jpg" alt="Rizal, Statue, Calamba" class="bg">
+    <img src="images/Municipality of Calamba.jpg" alt="hall, Calamba, City" class="bg">
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function
+ 
+showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("bg");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  // Hide all slides initially
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";  // Show the first slide
+            setTimeout(showSlides, 10000); // Change image every 2 seconds (adjust as needed)
+        }
+    </script>
+
+    <iframe 
+    src="Videos/Calamba Hymn.mp4"
+     title="Calamba Hymn"
+     allow= allowfullscreen>
+    </iframe>
+        <p class="quote"><i>"The people do not complain because they have no voice; <br> do not move 
+        because they are lethargic, and you say that <br> they do not suffer because 
+        you have not seen their hearts <br> bleed." <br> -Rizal </i>
+        </p>1
+    
+        <a href="Home.html">
+            <div class="header">
+                <h1>Calamba City</h1>
+                <h2>Civic Hub</h2>
+            </div>
+        </a>
+    
+    <div class="links-home">
+    <a href="Home.html">HOME</a>
+    <a href="Leader.html">MEET YOUR LEADERS</a>
+    <a href="Hub.html">CITY CIVIC HUB</a>
+    <a href="Popular.html">POPULAR NOW</a>
+    <a style="margin-left: 4.5%; margin-right: -0.2%;"> | </a><a></a>
+    <a href="Login.html" style="margin-right: 0%; margin-left: 1.5%;">LOG IN</a>
+    <a>|</a>
+    <a href="Signup.html" style="margin-left: 0%; margin-right: 0%;">SIGN UP</a>
+
+    </div>
+</body>
+</html>
